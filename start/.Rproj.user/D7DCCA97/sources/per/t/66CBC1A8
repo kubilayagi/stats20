@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1561478943342.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "179574243",
+    "id" : "66CBC1A8",
+    "lastKnownWriteTime" : 1561479070,
+    "last_content_update" : 1561479070066,
+    "path" : "~/Documents/UCLA/stats20/start/Untitled.Rmd",
+    "project_path" : "Untitled.Rmd",
+    "properties" : {
+        "cursorPosition" : "6,2",
+        "scrollLine" : "0",
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
