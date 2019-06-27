@@ -1,0 +1,62 @@
+-----------------------
+Stats 20 Week 1 Notes
+-----------------------
+
+Assessments will be twice a week - 
+within 7 days => +3
+before Aug 3rd with no skips => +2
+late or not complete => +1
+did not submit => +0
+
+use your student ID for the assessments
+
+skip() can be useful - lets you skip the question and move to the next one
+
+don't reinstall packages during final project, you should have them installed ahead of time
+
+[], [[]], $ => all of these represent the extract operators
+
+	[[]] => returns a vector when extracting from a list
+
+	[] => if you use this in a list, it will return a list
+
+generic vectors are not atomic => you can have different datatypes stored in the same vector
+
+atomic vectors cast all types to the same type if there are different types in the vector
+
+	characters > integers > logical (boolean)
+
+to see the type of data that something is => is() or mode()
+
+data frame:
+	rows: observations
+	columns: variables
+
+head() gives first 6 values
+
+dim() gives dimensions
+	outputs: #rows    #columns
+
+R conforms to the length of the longest vector => recycles from the first value
+	shorter one is extended to meet the length of the longest one
+
+	this can be used for an advantage as well
+
+seq(from, to, by) => similar to the : operator
+
+only need to load the library once for each session
+	loading libraries should be part of the lab submissions
+
+use load("file.RData") to load a saved R workspace
+
+getwd() and setwd() to read and write working directory -> this is where R workspace will look for data/files to read in
+
+load(url("http://url.com")) => load an online file directly to the R workspace
+
+%>% is the pipe symbol => output of the left hand function is used as the input to the next function
+
+read_excel("filename.xls", sheet = sheet#, skip = #oflinesyouwanttoskip, col_names = TRUE, col_types = NULL)
+
+if you import using the menu, go to history and copy the lines of code over to the source
+
+
