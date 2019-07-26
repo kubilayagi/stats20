@@ -1,0 +1,180 @@
+swirl()
+line1 <- "The table was a large one, but the three were all crowded together at one corner of it"
+line1 <- "The table was a large one, but the three were all crowded together at one corner of it:"
+line2 <- "\"No room! No room!\" they cried out when they saw Alice coming."
+line3 <- "\"There's plenty of room!\" said Alice indignantly, and she sat down in a large arm-chair at one end of the table."
+line2
+writeLines(line1, line2, line3)
+writeLines(line1)
+lines <- c(line1, line2, line3)
+writeLines(c(line1, line2, line3))
+?writeLines
+writeLines(c(line1, line2, line3), sep = " ")
+writeLines("hello\n\U263A")
+writeLines("hello\U263A")
+writeLines('To have a \\\ you need \\\\')
+writeLines("This is a really\nreally really\nlong string")
+writeLines("This is a really \nreally really \nlong string")
+a
+writeLines("\u0928\u092e\u0938\u094d\u0924\u0947\u0926\u0941\u0928\u093f\u092f\u093e")
+writeLines('\u0928\u092e\u0938\u094d\u0924\u0947\u0926\u0941\u0928\u093f\u092f\u093e')
+writeLines('\u0928\u092e\u0938\u094d\u0924\u0947\n \u0926\u0941\u0928\u093f\u092f\u093e')
+writeLines('\u0928\u092e\u0938\u094d\u0924\u0947\n\u0926\u0941\u0928\u093f\u092f\u093e')
+writeLines('\\u0928\u092e\u0938\u094d\u0924\u0947\n\u0926\u0941\u0928\u093f\u092f\u093e')
+writeLines('\\u0928\\u092e\\u0938\\u094d\\u0924\\u0947\n\\u0926\\u0941\\u0928\\u093f\\u092f\\u093e')
+info()
+writeLines("\"\u0928\u092e\u0938\u094d\u0924\u0947\u0926\u0941\u0928\u093f\u092f\u093e\"")
+writeLines("\"\u0928\u092e\u0938\u094d\u0924\u0947\n\u0926\u0941\u0928\u093f\u092f\u093e\"")
+writeLines(\u0928\u092e\u0938\u094d\u0924\u0947\u0926\u0941\u0928\u093f\u092f\u093e)
+writeLines("\u0928\u092e\u0938\u094d\u0924\u0947\u0926\u0941\u0928\u093f\u092f\u093e"")
+;
+writeLines("\u0928\u092e\u0938\u094d\u0924\u0947\u0926\u0941\u0928\u093f\u092f\u093e")
+skip()
+bye()
+swirl()
+line1 <- "The table was a large one, but the three were all crowded together at one corner of it:"
+line2 <- \"No room! No room!\" they cried out when they saw Alice coming.
+line2 <- "\"No room! No room!\" they cried out when they saw Alice coming.
+"'"
+line2 <- "\"No room! No room!\" they cried out when they saw Alice coming."
+line3 <- "\"There's plenty of room!\" said Alice indignantly, and she sat down in a large arm-chair at one end of the table.
+""
+line3 <- "\"There's plenty of room!\" said Alice indignantly, and she sat down in a large arm-chair at one end of the table."
+line2
+writeLines(c(line1, line2, line3))
+writeLines(c(line1, line2, line3), sep = " ")
+writeLines("hello\n\U263A")
+writeLines("To have a \\ you need \\\\")
+writeLines("This is a really\n really really\n long string")
+writeLines("This is a really
+| \nreally really \nlong string")
+writeLines("This is a really \nreally really \nlong string")
+writeLines("\u0928\u092e\u0938\u094d\u0924\u0947 \u0926\u0941\u0928\u093f\u092f\u093e")
+format(c(0.0011, 0.011, 1), digits = 1)
+format(c(1.0011, 2.011, 1), digits = 1)
+percent_change
+format(percent_change, digits = 2)
+format(income, digits = 1)
+format(income, digits = 2)
+format(p_values, digits = 1)
+format(p_values, digits = 2)
+format(p_values, digits = 3)
+p_values
+format(p_values, digits = 4)
+format(p_values, digits = 5)
+format(p_values, digits = 6)
+format(p_values, digits = 7)
+format(p_values, digits = 12)
+format(p_values, digits = 8)
+format(p_values, digits = 9)
+format(p_values, digits = 10)
+format(p_values, digits = 11)
+format(p_values, digits = 13)
+format(p_values, digits = 14)
+format(p_values, digits = 15)
+?format
+format(p_values, scientific = FALSE)
+formatted_income <- format(income, digits = 2)
+print(formatted_income)
+writeLines(formatted_income)
+trimmed_income <- format(income, digits - 2, trim = TRUE)
+trimmed_income <- format(income, digits = 2, trim = TRUE)
+writeLines(trimmed_income)
+pretty_income <- format(income, digits = 2, big.mark = ",")
+writeLines(pretty_income)
+format(percent_change, digits = 2)
+pretty_percent <- formatC(percent_change, digits = 2, flag = "+")
+pretty_percent <- formatC(percent_change, digits = 3, flag = "+")
+pretty_percent <- formatC(percent_change, digits = 1, flag = "+")
+pretty_percent <- formatC(percent_change, digits = 4, flag = "+")
+pretty_percent <- formatC(percent_change, digits = 5, flag = "+")
+percent_change
+pretty_percent <- formatC(percent_change, digits = 2, flag = "+")
+?formatC
+formatC(percent_change, format = "f", digits = 1, flag = "+")
+formatC(percent_change, format = "f", digits = 1, flag = "+")
+formatC(percent_change, format = "f", digits = 2, flag = "+")
+pretty_percent <- formatC(percent_change, format = "f", digits = 1, flag = "+")
+?paste
+paste("$", pretty_income, sep = "")
+paste(pretty_income, "%", sep = "")
+paste(pretty_percent, "%", sep = "")
+preamble
+toupper(preamble)
+tolower(preamble)
+casefold
+substr(x = preamble, start = 37, stop = 73)
+substring(text = preamble, first = 37, last = 73)
+substr(x = preamble, start = 1, stop = 1:13)
+substring(text = preamble, first = 1, last = 1:13)
+strsplit(preamble, split = " ")
+unlist(strsplit(preamble, split = " "))
+words <- unlist(strsplit(x = preamble, split = " "))
+paste(words, collapse = " ")
+library(swirl)
+uninstall_all_courses(force = TRUE)
+install_course_github("lewv", "stats20su19swirl")
+swirl()
+writeLines(plath)
+View(plath)
+?grep
+?regex
+regular_expression <- regex("a")
+regular_expression <- "a"
+string_to_search <- "California"
+grepl(regular_expression, string_to_search)
+nxt()
+nxt()
+grep(pattern = "thumb", x = plath)
+grepl(pattern = "thumb", x = plath)
+grepl("^a", c("bab", "aab"))
+grepl("$b", c("bab", "aab"))
+grepl("b$", c("bab", "aab"))
+grep(pattern = "^thumb", x = plath)
+grep("ill", plath)
+grep("ill$", plath)
+grep(il{1,}, plath)
+grep("il{1,}", plath)
+plooth <- gsub("[aeiou]{2}", "oo", plath)
+View(plooth)
+grepl("\\d", "0123456789")
+grepl("\\D", "0123456789")
+file.show("chrcls")
+plath_nopunct <- gsub("\\D\\S\\W", "", plath)
+plath_nopunct <- gsub(pattern = "[[:punct:]]", replacement = "", x = plath)
+plath_nopunct
+gsub(pattern = "[[:space:]]$", replacement = "", x = plath_nopunct)
+plath_nopunct <- gsub(pattern = " $", replacement = "", x = plath_nopunct)
+plath_nopunct <- gsub(pattern = " $", replacement = "", x = plath_nopunct)
+plath_nopunct <- gsub(pattern = "[[:space:]]$", replacement = "", x = plath_nopunct)
+Enter grepl(".", "Maryland")
+grepl(".", "Maryland")
+grepl(".", "")
+grepl("a.b", c("aaa", "aab", "abb", "acadb"))
+a
+cut <- tolower(plath_nopunct[grep(pattern = ".", plath_nopunct)])
+tolower(gsub(pattern = "( *)[[:punct:]]", replacement = "", x = plath[grep(pattern = ".", x = plath)]))
+grepl("[aeiou]", "rhythm")
+grepl("[aeiou]", "rhythms")
+grepl("\.", "http://statistics.ucla.edu/")
+grepl("\\.", "http://statistics.ucla.edu/")
+plath[grep(pattern = "ll\\b", x = plath)]
+?regmatches
+submit()
+submit()
+submit()
+submit()
+nxt()
+nxt()
+submit()
+submit()
+submit(0)
+submit()
+submit()
+submit()
+submit()
+submit()
+submit()
+submit()
+submit()
+faculty_email

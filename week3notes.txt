@@ -1,0 +1,16 @@
+everything that you need in Rmd file, you need to load it
+
+it doesn't matter if it exists in your memory, you still need to load it
+
+when you want to read data, you need to do: library(readr)
+
+you can create variables (columns) in data sets by just assigning to it
+
+in dplyr, select function choose the variables that you want (same as sql)
+	you can either choose the column names or the column numbers
+
+you can use select with a minus sign in order to drop variables from the data set
+	i guess by default it gives every variable
+
+
+Ggplot structure: ggplot(data = dataframe, aes(...)) + geom_[typename]()

@@ -1,0 +1,115 @@
+---
+title: "Lab 3"
+author: "Kubilay Agi"
+date: "7/24/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Part 1
+```{r}
+mysd1 <- function(x, na.rm = FALSE) {
+  if (is.vector(x) || is.factor(x)) {
+    return(sqrt(var(x, na.rm = na.rm)))
+  } else {
+    return(sqrt(var(as.double(x), na.rm = na.rm)))
+  }
+}
+```
+
+##### Example 1
+```{r}
+mysd1(rivers)
+```
+
+### Part 2
+```{r}
+mysd2 <- function(x, na.rm = FALSE) {
+  if (is.data.frame(x)) {
+    return(sapply(x, mysd1))
+  } else {
+    return(mysd1(x, na.rm))
+  }
+}
+```
+
+##### Example 1
+```{r}
+mysd2(USArrests)
+```
+
+### Part 3
+```{r}
+pythag <- function(a, b) {
+  if (a <= 0 || b <= 0) {
+    stop("values need to be positive")
+  } else if (!is.numeric(a) || !is.numeric(b)) {
+    stop("I need numeric values to make this work")
+  }
+  return(list("hypotenuse" = sqrt(a^2 + b^2), "sidea" = a, "sideb" = b))
+}
+```
+
+##### Example 1
+```{r}
+pythag(3,4)
+```
+
+##### Example 2
+```{r error=TRUE}
+pythag("A","B")
+```
+
+##### Example 3
+```{r error=TRUE}
+pythag(-4,-5)
+```
+
+##### Example 4
+```{r}
+pythag(4:10,2:8)
+```
+
+### Part 4
+```{r}
+# 1
+library(plyr)
+```
+
+```{r}
+# 2
+sapply(baseball, class)
+```
+
+```{r}
+#3
+baseball2 <- as.data.frame(baseball[,c(1,2,6:12)])
+baseball3 <- sapply(baseball2[,3:9], function(x) {
+  x / max(x)
+})
+
+baseball2[,3:9] <- baseball3[1:7]
+head(baseball2)
+```
+
+```{r}
+str(baseball2)
+```
+
+### Part 5
+```{r}
+download.file(url = "http://www.stat.ucla.edu/~vlew/datasets/spssSTUFF.zip", destfile = "spssSTUFF.zip")
+unzip("spssSTUFF.zip", exdir = "spssSTUFF")
+list.files("spssSTUFF")
+```
+
+```{r}
+library(readr)
+
+lapply(list.files(path = ".", pattern = "death.{0,}\\.csv"), function(x) {
+  assign(substring(x, 1, nchar(x) - 4), read_csv(x))
+})
+```
